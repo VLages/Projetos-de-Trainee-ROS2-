@@ -1,0 +1,42 @@
+[0.523s] Invoking command in '/home/vitor/Projetos-de-Trainee-ROS2-/src/publ_ass': PYTHONPATH=/home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publ_ass build --build-base /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build install --record /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/install.log --single-version-externally-managed install_data
+[0.733s] running egg_info
+[0.734s] creating ../../build/publ_ass/publ_ass.egg-info
+[0.734s] writing ../../build/publ_ass/publ_ass.egg-info/PKG-INFO
+[0.734s] writing dependency_links to ../../build/publ_ass/publ_ass.egg-info/dependency_links.txt
+[0.734s] writing entry points to ../../build/publ_ass/publ_ass.egg-info/entry_points.txt
+[0.734s] writing requirements to ../../build/publ_ass/publ_ass.egg-info/requires.txt
+[0.734s] writing top-level names to ../../build/publ_ass/publ_ass.egg-info/top_level.txt
+[0.734s] writing manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+[0.735s] reading manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+[0.736s] adding license file 'LICENSE'
+[0.736s] writing manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+[0.736s] running build
+[0.736s] running build_py
+[0.736s] creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build
+[0.737s] creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib
+[0.737s] creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+[0.737s] copying publ_ass/codigo_assinante.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+[0.737s] copying publ_ass/codigo_publicador.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+[0.737s] copying publ_ass/__init__.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+[0.737s] running install
+[0.737s] running install_lib
+[0.738s] creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+[0.738s] copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/codigo_assinante.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+[0.738s] copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/codigo_publicador.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+[0.738s] copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/__init__.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+[0.738s] byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/codigo_assinante.py to codigo_assinante.cpython-310.pyc
+[0.739s] byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/codigo_publicador.py to codigo_publicador.cpython-310.pyc
+[0.739s] byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/__init__.py to __init__.cpython-310.pyc
+[0.739s] running install_data
+[0.739s] creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index
+[0.739s] creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index
+[0.739s] creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index/packages
+[0.739s] copying resource/publ_ass -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index/packages
+[0.740s] copying package.xml -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/publ_ass
+[0.740s] running install_egg_info
+[0.741s] Copying ../../build/publ_ass/publ_ass.egg-info to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass-0.0.0-py3.10.egg-info
+[0.742s] running install_scripts
+[0.760s] Installing listener script to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/publ_ass
+[0.760s] Installing talker script to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/publ_ass
+[0.760s] writing list of installed files to '/home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/install.log'
+[0.778s] Invoked command in '/home/vitor/Projetos-de-Trainee-ROS2-/src/publ_ass' returned '0': PYTHONPATH=/home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/publ_ass build --build-base /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build install --record /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/install.log --single-version-externally-managed install_data

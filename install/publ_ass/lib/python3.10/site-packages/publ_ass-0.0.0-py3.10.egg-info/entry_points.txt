@@ -1,0 +1,4 @@
+[console_scripts]
+listener = publ_ass.codigo_assinante:main
+talker = publ_ass.codigo_publicador:main
+

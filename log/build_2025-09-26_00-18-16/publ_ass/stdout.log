@@ -1,0 +1,40 @@
+running egg_info
+creating ../../build/publ_ass/publ_ass.egg-info
+writing ../../build/publ_ass/publ_ass.egg-info/PKG-INFO
+writing dependency_links to ../../build/publ_ass/publ_ass.egg-info/dependency_links.txt
+writing entry points to ../../build/publ_ass/publ_ass.egg-info/entry_points.txt
+writing requirements to ../../build/publ_ass/publ_ass.egg-info/requires.txt
+writing top-level names to ../../build/publ_ass/publ_ass.egg-info/top_level.txt
+writing manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+reading manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/publ_ass/publ_ass.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build
+creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib
+creating /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+copying publ_ass/codigo_assinante.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+copying publ_ass/codigo_publicador.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+copying publ_ass/__init__.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass
+running install
+running install_lib
+creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/codigo_assinante.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/codigo_publicador.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+copying /home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/build/lib/publ_ass/__init__.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass
+byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/codigo_assinante.py to codigo_assinante.cpython-310.pyc
+byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/codigo_publicador.py to codigo_publicador.cpython-310.pyc
+byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index
+creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index
+creating /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index/packages
+copying resource/publ_ass -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/ament_index/resource_index/packages
+copying package.xml -> /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/share/publ_ass
+running install_egg_info
+Copying ../../build/publ_ass/publ_ass.egg-info to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/python3.10/site-packages/publ_ass-0.0.0-py3.10.egg-info
+running install_scripts
+Installing listener script to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/publ_ass
+Installing talker script to /home/vitor/Projetos-de-Trainee-ROS2-/install/publ_ass/lib/publ_ass
+writing list of installed files to '/home/vitor/Projetos-de-Trainee-ROS2-/build/publ_ass/install.log'
