@@ -60,8 +60,74 @@ O fluxo de comunicação no sistema de exemplo ocorre da seguinte maneira:
 
 Este ciclo se repete continuamente enquanto os dois nós estiverem em execução, garantindo um fluxo de dados constante e desacoplado entre eles.
 
------------
+## Como usar?
 
+Este pacote demonstra um exemplo simples de "talker" (publisher) e "listener" (subscriber) usando a biblioteca de cliente `rclpy` do ROS 2.
+
+O nó `talker` publica mensagens do tipo `String` em um tópico chamado `topic`, e o nó `listener` se inscreve neste tópico para receber e imprimir as mensagens.
+
+### Pré-requisitos
+
+  - Você precisa ter um ambiente ROS 2 Humble (ou compatível) configurado.
+  - Você deve ter um workspace do ROS 2 criado. Este pacote deve estar dentro do diretório `src` do seu workspace.
+
+### 1\. Abrindo o Pacote
+
+Navegue até a raiz do seu workspace e execute o seguinte comando:
+
+```bash
+cd ~/Projetos-de-Trainee-ROS2-
+```
+
+### 2\. Sourcing do Ambiente
+
+Após o `cd`, você precisa adicionar os pacotes do workspace ao seu ambiente. Abra um novo terminal e execute:
+
+```bash
+source install/setup.bash
+```
+
+**Nota:** Você precisará fazer isso em cada novo terminal que abrir para executar os nós.
+
+### 3\. Executando os Nós
+
+Você precisará de dois terminais separados para rodar o publisher e o subscriber.
+
+**Terminal 1: Rode o Listener (Subscriber)**
+
+```bash
+ros2 run publ_ass listener
+```
+
+**Terminal 2: Rode o Talker (Publisher)**
+
+```bash
+ros2 run publ_ass talker
+```
+
+## Saída Esperada
+
+No **Terminal 1** (listener), você verá uma saída semelhante a esta, com as mensagens sendo recebidas do talker:
+
+```
+[INFO] [1671542615.833633270] [minimal_subscriber]: Mensagem enviada: "Desde o início do programa se passaram: 0 segundos"
+[INFO] [1671542616.333629858] [minimal_subscriber]: Mensagem enviada: "Desde o início do programa se passaram: 1 segundos"
+[INFO] [1671542616.833632945] [minimal_subscriber]: Mensagem enviada: "Desde o início do programa se passaram: 2 segundos" 
+...
+```
+
+No **Terminal 2** (talker), você verá a confirmação de que as mensagens estão sendo publicadas:
+
+```
+[INFO] [1671542615.333149869] [minimal_publisher]: Publishing: "Desde o início do programa se passaram: 0 segundos"
+[INFO] [1671542615.833157577] [minimal_publisher]: Publishing: "Desde o início do programa se passaram: 1 segundos"
+[INFO] [1671542616.333158045] [minimal_publisher]: Publishing: "Desde o início do programa se passaram: 2 segundos" 
+...
+```
+
+Para parar a execução, pressione `Ctrl+C` em cada terminal.
+
+---------------
 
 # Sistema de Comunicação Síncrono (Cliente/Servidor via Serviços)
 
@@ -130,3 +196,78 @@ O fluxo de comunicação no exemplo de um serviço de soma ocorre da seguinte ma
         ```
         "O resultado da soma 5 + 10 é 15"
         ```
+Com certeza\! Aqui está um arquivo `README.md` explicando como usar o serviço e o cliente ROS 2 com base no tutorial fornecido.
+
+## Como usar?
+
+Este pacote demonstra um exemplo simples de um serviço e um cliente usando a biblioteca de cliente `rclpy` do ROS 2.
+
+  - O nó de **serviço** (`service`) espera por uma requisição que contém dois inteiros (`a` e `b`). Ao receber a requisição, ele soma os dois números e envia o resultado de volta.
+  - O nó de **cliente** (`client`) envia uma requisição ao serviço com dois números inteiros fornecidos como argumentos de linha de comando e aguarda a resposta para exibi-la.
+
+
+### Pré-requisitos
+
+  - Você precisa ter um ambiente ROS 2 Humble (ou compatível) configurado.
+  - Você deve ter um workspace do ROS 2 criado. Este pacote deve estar dentro do diretório `src` do seu workspace.
+  - A interface de serviço customizada (`AddTwoInts`) já deve ter sido criada em um pacote separado (conforme o tutorial).
+
+### 1\. Abrindo o Pacote
+
+Navegue até a raiz do seu workspace e execute o seguinte comando para construir o pacote:
+
+```bash
+cd ~/Projetos-de-Trainee-ROS2-
+```
+
+### 2\. Sourcing do Ambiente
+
+Após o build, você precisa adicionar os pacotes do workspace ao seu ambiente. Abra um novo terminal e execute:
+
+```bash
+source install/setup.bash
+```
+
+**Nota:** Você precisará fazer isso em cada novo terminal que abrir para executar os nós.
+
+### 3\. Executando os Nós
+
+Você precisará de dois terminais separados para rodar o serviço e o cliente.
+
+**Terminal 1: Rode o Nó de Serviço**
+
+Primeiro, inicie o serviço. Ele ficará aguardando por requisições.
+
+```bash
+ros2 run ser_cli service
+```
+
+**Terminal 2: Rode o Nó de Cliente**
+
+Agora, em outro terminal (não se esqueça de executar o `source` nele também), rode o cliente, passando dois números inteiros como argumentos.
+
+```bash
+ros2 run ser_cli client <numero1> <numero2>
+```
+
+Por exemplo, para somar 41 e 1:
+
+```bash
+ros2 run ser_cli client 41 1
+```
+
+## Saída Esperada
+
+No **Terminal 1** (serviço), você verá uma confirmação de que a requisição foi recebida e processada:
+
+```
+[INFO] [1671542615.833633270] [minimal_service]: Números encaminhados: (A = 41 B = 1)
+```
+
+No **Terminal 2** (cliente), você verá a requisição sendo enviada e o resultado recebido do serviço:
+
+```
+[INFO] [1671542615.833149869] [minimal_client]: O resultado da soma 41 + 1 é 42
+```
+
+Para parar o serviço, pressione `Ctrl+C` no Terminal 1.
