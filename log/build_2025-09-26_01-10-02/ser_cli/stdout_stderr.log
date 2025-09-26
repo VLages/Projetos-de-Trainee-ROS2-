@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/ser_cli/ser_cli.egg-info/PKG-INFO
+writing dependency_links to ../../build/ser_cli/ser_cli.egg-info/dependency_links.txt
+writing entry points to ../../build/ser_cli/ser_cli.egg-info/entry_points.txt
+writing requirements to ../../build/ser_cli/ser_cli.egg-info/requires.txt
+writing top-level names to ../../build/ser_cli/ser_cli.egg-info/top_level.txt
+reading manifest file '../../build/ser_cli/ser_cli.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/ser_cli/ser_cli.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ser_cli/codigo_cliente.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli
+copying ser_cli/codigo_servidor.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli
+running install
+running install_lib
+copying /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli/codigo_cliente.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli
+copying /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli/codigo_servidor.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli
+byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli/codigo_cliente.py to codigo_cliente.cpython-310.pyc
+byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli/codigo_servidor.py to codigo_servidor.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/ser_cli/ser_cli.egg-info to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client script to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/ser_cli
+Installing service script to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/ser_cli
+writing list of installed files to '/home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/install.log'

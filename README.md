@@ -59,3 +59,74 @@ O fluxo de comunicação no sistema de exemplo ocorre da seguinte maneira:
         ```
 
 Este ciclo se repete continuamente enquanto os dois nós estiverem em execução, garantindo um fluxo de dados constante e desacoplado entre eles.
+
+-----------
+
+
+# Sistema de Comunicação Síncrono (Cliente/Servidor via Serviços)
+
+Este documento descreve o funcionamento de um sistema de comunicação baseado no padrão **Cliente-Servidor**. Este modelo utiliza **serviços** para uma comunicação **síncrona**, ou seja, de requisição e resposta.
+
+Diferente do modelo Publicador/Assinante, aqui a comunicação é direta e o cliente que faz um pedido aguarda ativamente por uma resposta do servidor antes de continuar sua execução. É o modelo ideal para tarefas que exigem uma confirmação ou um resultado direto, funcionando de forma análoga a uma chamada de função remota.
+
+## Conceitos Fundamentais
+
+1.  **Servidor (Server):**
+
+      * É o nó que **oferece uma capacidade ou funcionalidade** específica. Ele define um serviço, aguarda por requisições nesse serviço e as processa.
+      * Para cada requisição recebida, ele executa uma lógica e **envia uma resposta de volta** para o cliente que a solicitou.
+      * No nosso exemplo, o servidor oferece um serviço de soma: ele recebe dois números e retorna o resultado.
+
+2.  **Cliente (Client):**
+
+      * É o nó que **consome a funcionalidade** oferecida pelo servidor.
+      * Quando precisa realizar uma tarefa, ele envia uma requisição para o servidor com os dados necessários.
+      * O ponto crucial é que, após enviar a requisição, o cliente **pausa sua execução e aguarda** (fica bloqueado) até que a resposta do servidor chegue.
+
+3.  **Serviço (Service):**
+
+      * É a interface de comunicação que conecta o cliente e o servidor. É definido por um nome e uma estrutura de dados clara, contendo:
+          * **Requisição (Request):** Os dados que o cliente envia para o servidor (ex: dois inteiros `A` e `B`).
+          * **Resposta (Response):** Os dados que o servidor envia de volta para o cliente (ex: um inteiro com a `soma`).
+
+4.  **Comunicação Síncrona:**
+
+      * O cliente envia uma requisição e **bloqueia** sua operação.
+      * O servidor recebe, processa a requisição e envia uma resposta.
+      * O cliente recebe a resposta, **desbloqueia** sua operação e continua a execução com o resultado em mãos.
+
+## Fluxo de Funcionamento
+
+O fluxo de comunicação no exemplo de um serviço de soma ocorre da seguinte maneira:
+
+1.  **Inicialização:**
+
+      * O nó **Servidor** é iniciado. Ele anuncia que está oferecendo um serviço e fica aguardando por chamadas.
+
+2.  **Requisição do Cliente:**
+
+      * O nó **Cliente**, em algum ponto de sua execução, precisa somar dois números (ex: `A = 5` e `B = 10`).
+      * Ele monta uma mensagem de requisição contendo esses dois números.
+      * O cliente "chama" o serviço e envia a requisição. **Neste momento, a execução do cliente é pausada.**
+
+3.  **Processamento no Servidor:**
+
+      * O Servidor recebe a requisição com os dados `A = 5` e `B = 10`.
+      * Ele pode registrar a chegada dos dados, por exemplo, imprimindo no seu próprio console:
+        ```
+        "Números encaminhados: (A = 5 B = 10)"
+        ```
+      * O servidor executa a lógica principal do serviço: `resultado = 5 + 10`.
+
+4.  **Resposta do Servidor:**
+
+      * Com o cálculo finalizado, o Servidor monta uma mensagem de resposta contendo o resultado (`15`).
+      * Ele envia essa resposta de volta para o cliente específico que fez a requisição.
+
+5.  **Finalização no Cliente:**
+
+      * O Cliente recebe a resposta (`15`) do servidor. **Sua execução é desbloqueada.**
+      * Agora, com o resultado em mãos, ele pode continuar seu trabalho. Por exemplo, formatando e imprimindo a mensagem final:
+        ```
+        "O resultado da soma 5 + 10 é 15"
+        ```

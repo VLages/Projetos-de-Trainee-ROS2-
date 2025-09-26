@@ -1,0 +1,4 @@
+[console_scripts]
+client = ser_cli.codigo_cliente:main
+service = ser_cli.codigo_servidor:main
+

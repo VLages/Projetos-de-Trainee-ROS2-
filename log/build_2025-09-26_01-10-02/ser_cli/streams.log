@@ -1,0 +1,29 @@
+[0.503s] Invoking command in '/home/vitor/Projetos-de-Trainee-ROS2-/src/ser_cli': PYTHONPATH=/home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ser_cli build --build-base /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build install --record /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/install.log --single-version-externally-managed install_data
+[0.708s] running egg_info
+[0.708s] writing ../../build/ser_cli/ser_cli.egg-info/PKG-INFO
+[0.708s] writing dependency_links to ../../build/ser_cli/ser_cli.egg-info/dependency_links.txt
+[0.708s] writing entry points to ../../build/ser_cli/ser_cli.egg-info/entry_points.txt
+[0.709s] writing requirements to ../../build/ser_cli/ser_cli.egg-info/requires.txt
+[0.709s] writing top-level names to ../../build/ser_cli/ser_cli.egg-info/top_level.txt
+[0.710s] reading manifest file '../../build/ser_cli/ser_cli.egg-info/SOURCES.txt'
+[0.710s] adding license file 'LICENSE'
+[0.711s] writing manifest file '../../build/ser_cli/ser_cli.egg-info/SOURCES.txt'
+[0.711s] running build
+[0.711s] running build_py
+[0.711s] copying ser_cli/codigo_cliente.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli
+[0.711s] copying ser_cli/codigo_servidor.py -> /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli
+[0.711s] running install
+[0.712s] running install_lib
+[0.712s] copying /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli/codigo_cliente.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli
+[0.712s] copying /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build/lib/ser_cli/codigo_servidor.py -> /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli
+[0.713s] byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli/codigo_cliente.py to codigo_cliente.cpython-310.pyc
+[0.713s] byte-compiling /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli/codigo_servidor.py to codigo_servidor.cpython-310.pyc
+[0.714s] running install_data
+[0.714s] running install_egg_info
+[0.715s] removing '/home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli-0.0.0-py3.10.egg-info' (and everything under it)
+[0.716s] Copying ../../build/ser_cli/ser_cli.egg-info to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages/ser_cli-0.0.0-py3.10.egg-info
+[0.716s] running install_scripts
+[0.735s] Installing client script to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/ser_cli
+[0.735s] Installing service script to /home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/ser_cli
+[0.735s] writing list of installed files to '/home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/install.log'
+[0.753s] Invoked command in '/home/vitor/Projetos-de-Trainee-ROS2-/src/ser_cli' returned '0': PYTHONPATH=/home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vitor/Projetos-de-Trainee-ROS2-/install/ser_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/ser_cli build --build-base /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/build install --record /home/vitor/Projetos-de-Trainee-ROS2-/build/ser_cli/install.log --single-version-externally-managed install_data
