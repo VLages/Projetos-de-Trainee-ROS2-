@@ -15,7 +15,7 @@ class PubMinimo(Node):
         msg = String()
         msg.data = 'Desde o início do programa se passaram: %d segundos' % self.i
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.get_logger().info('Publicando: "%s"' % msg.data)
         self.i += 1
 
 def main(args=None):
